@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <HEAD>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compativle" content="IE-Edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Admission</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </HEAD>
+    <style>
+        .header{
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+        }
+    </style>
+    <body>
+        <section class="header">
+            <nav>
+                <img src="Images/LOGO.png">
+                <div class="nav-links">
+                   
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="courses.html">COURSES</a></li>
+                        <li><a href="contactUs.html">CONTACT US</a></li>
+                        <li><a href="admission.html">ADMISSION</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="post" class="contact-left">
+                <form action="db.php" method="post">
+                <div class="contact-left-title">
+                    <h2>Get In Touch</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="68aca133-8d43-4ce3-b6fc-5384d0984d3c">
+                <input type="text" name="FullName" placeholder="FullName" class="contact-input" required>
+                <input type="email" name="Email" placeholder="Email" class="contact-input" required>
+                <input type="number" name="MobileNo" placeholder="MobileNo" class="contact-input" required>
+                <input type="number" name="age" placeholder="Age" class="contact-input" required>
+                <input type="date" name="date" placeholder="Birth Date" class="contact-input" required>
+                <textarea name="message" placeholder="Address" class="contact-input" required></textarea>
+                <hr class="hori">
+                
+
+                <label for="courses" class="lbl">Select Your Course</label>
+                <select class="slt" name="course" id="courses">
+                <option value="BCA">BCA</option>
+                <option value="DCA">DCA</option>
+                <option value="PGDCA">PGDCA</option>
+                <option value="MSC(CS)">MSC(CS)</option>
+                </select>
+               
+                <button type="submit" name="submit">APPLY</button> 
+                </form>
+            </form>
+            <div class="contact-right">
+                <img src="Images/Admission.webp" >
+            </div>
+        </div>
+
+
+    </body>
+</html>
